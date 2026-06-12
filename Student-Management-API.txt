@@ -1,0 +1,52 @@
+Student Management API - Planning Document
+Objective:
+The Student Management API is a Flask-based backend application that allows users to manage student records.
+ It provides endpoints to add, retrieve, search, and delete student information through RESTful APIs.
+Features:
+1. Get All Students
+
+Retrieve the complete list of students stored in the system.
+
+2. Get Student by ID
+
+Retrieve the details of a specific student using their unique ID.
+
+3. Add Student
+
+Add a new student record to the system using JSON data.
+
+4. Search Student
+
+Search for a student by name and return matching records.
+
+5. Delete Student (Bonus)
+
+Delete a student record using the student ID.
+{ "id": 1, "name": "James", "age": 20, "college": "ABC College", "branch": "Computer Science" }
+
+API Endpoints
+Get All Students
+
+Method: GET
+
+/students
+Get Student by ID
+
+Method: GET
+
+/students/<id>
+Add Student
+
+Method: POST
+
+/add-student
+Search Student by Name
+
+Method: GET
+
+/search-student/<name>
+Delete Student (Bonus)
+
+Method: DELETE
+
+/delete-student/<id>
